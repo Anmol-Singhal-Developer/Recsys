@@ -1,0 +1,86 @@
+{
+  "101": {
+    "cuisines": [
+      "Afghan",
+      "Bakery",
+      "Bohri",
+      "Indian",
+      "Israeli",
+      "Japanese",
+      "Lebanese",
+      "Lucknowi",
+      "Sindhi",
+      "South Indian",
+      "Swedish"
+    ],
+    "amenities": [
+      "Subscription Available",
+      "Table Reservation Required"
+    ],
+    "budget": 5871,
+    "home_lat": 39.742480981818574,
+    "home_lon": -104.98318281162544
+  },
+  "Anmol": {
+    "first_name": "Anmol",
+    "last_name": "Singhal",
+    "password_hash": "scrypt:32768:8:1$Ktop99Yt7gmajtLU$71703e7c08ebe041a0f2892c346effdf2356e8582cd88a96361558e3c62b12162bf9972d9516cd7bfbf5b393d8fbd1be381cdef214c84f6c49a26f1ccaac14e6",
+    "age": 25,
+    "cuisines": [
+      "Afghan"
+    ],
+    "amenities": [
+      "Above 18 Only"
+    ],
+    "budget": 4978,
+    "home_lat": 39.742408657359825,
+    "home_lon": -104.98327431280597
+  },
+  "Shreyas": {
+    "first_name": "Shreyas",
+    "last_name": "Pujari",
+    "password_hash": "scrypt:32768:8:1$8dkO5l3EjA8BZ5Ky$3632f70ee92925995fe96885dd48526fc072c1b6b835d48679e53935cbecd1fbef754016fe2f7eaf3670bd99aaf66ed3eed38894f93d324bddd54bc0b801ea00",
+    "age": 28,
+    "cuisines": [
+      "African"
+    ],
+    "amenities": [
+      "Alipay Accepted"
+    ],
+    "budget": 3353,
+    "home_lat": 39.74247903198773,
+    "home_lon": -104.98318839405341
+  },
+  "Madhu": {
+    "first_name": "Madhu",
+    "last_name": "Singhal",
+    "password_hash": "scrypt:32768:8:1$UsxLA4RnZTbdcXJA$af60eccd8a47cbab9700d8fb76a575d62597a914853432fbcefb2fddc170e953437674bdf00feeb431d6a0a54f443541c073b79077abe29d969317b8cbe9eaa7",
+    "age": 25,
+    "cuisines": [
+      "Afghan"
+    ],
+    "amenities": [
+      "All Day Breakfast"
+    ],
+    "budget": 5468
+  },
+  "Ashok": {
+    "first_name": "Ashok",
+    "last_name": "Singhal",
+    "password_hash": "scrypt:32768:8:1$rbseiVzmaDMdMhDS$ca01b0708a15b2162cea565460ba36ba18f5c2e005cd17e9821713774ed1ae5f055f16a3f548bccaca240b3afe1f49c5beda394839b4c04343f5e646e969a764",
+    "age": 25,
+    "cuisines": [
+      "Afghan"
+    ],
+    "amenities": [],
+    "budget": 3146,
+    "home_lat": 39.74243328167503,
+    "home_lon": -104.98321021874193
+  },
+  "Anmol123": {
+    "first_name": "Anmol",
+    "last_name": "Singhal",
+    "password_hash": "scrypt:32768:8:1$5uFsbKHjMDBE0prj$e18cafc681f4ce824d5aee9670b44dd2406953c2948dddc91b348fe6eab5611fd1a73414113f5f959afe5ff3107aebf6c6b4df0da5d3f0399c53592b78b62073",
+    "age": 24
+  }
+}

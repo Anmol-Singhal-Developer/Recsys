@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container">
+  <h2 class="mb-4">{{ session['username'] }}'s Grocery List</h2>
+
+  <form method="POST" action="{{ url_for('grocery_add') }}" class="form-inline mb-4">
+    <div class="form-group mr-2">
+      <input type="text" name="item" class="form-control" placeholder="Add grocery item" required>
+    </div>
+    <button type="submit" class="btn btn-success">Add</button>
+  </form>
+
+  {% if grocery_list %}
+    <ul class="list-group shadow-sm">
+      {% for it in grocery_list %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>{{ it }}</span>
+          <form method="POST" action="{{ url_for('grocery_remove') }}" class="mb-0">
+            <input type="hidden" name="item" value="{{ it }}">
+            <button class="btn btn-sm btn-outline-danger">Remove</button>
+          </form>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <div class="alert alert-info mt-3">
+      <em>No items added Till now. Add ingredients from recipes or enter them in the text box above.</em>
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

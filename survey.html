@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container">
+  <h2 class="mb-4">Your Food Preferences</h2>
+  <form method="post" action="{{ url_for('set_survey') }}">
+
+    <div class="form-group">
+      <label for="cuisines">Select Cuisines : </label>
+      <select name="cuisines" id="cuisines" class="form-control" multiple size="5">
+        {% for c in cuisines %}
+          <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+      </select>
+      <small class="form-text text-muted"> Hold Ctrl or Cmnd to select multiple options </small>
+    </div>
+
+    <div class="form-group">
+      <label for="amenities">Select Amenities</label>
+      <select name="amenities" id="amenities" class="form-control" multiple size="5">
+        {% for a in amenities %}
+          <option value="{{ a }}">{{ a }}</option>
+        {% endfor %}
+      </select>
+      <small class="form-text text-muted">Select amenities you care about</small>
+    </div>
+
+    <div class="form-group">
+      <label for="budg">Typical Budget per Person</label>
+      <input type="range" name="budget" class="form-control-range" id="budg"
+             min="{{ min_budget }}" max="{{ max_budget }}" value="{{ min_budget }}">
+      <div>₹ <span id="budg-val">{{ min_budget }}</span></div>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save Preferences</button>
+  </form>
+
+  <script>
+    const b = document.getElementById('budg'),
+          v = document.getElementById('budg-val');
+    b.addEventListener('input', ()=> v.textContent = b.value);
+  </script>
+</div>
+{% endblock %}

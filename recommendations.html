@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container">
+  <h2 class="mb-4"> Your Top 5 Restaurant Picks : </h2>
+
+  <form method="post" action="{{ url_for('record_feedback') }}">
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover table-sm">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Like</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Cuisines</th>
+            <th scope="col">Amenities</th>
+            <th scope="col">Your Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in recs %}
+          <tr>
+            <td class="text-center">
+              <input type="checkbox" name="likes" value="{{ r.ResId }}">
+            </td>
+            <td><strong>{{ r.Name }}</strong></td>
+            <td>{{ r.Address }}</td>
+            <td>{{ r.CuisineList|join(', ') }}</td>
+            <td>{{ r.Amenities|join(', ') }}</td>
+            <td>
+              <select name="rating_{{r.ResId}}" class="form-control form-control-sm">
+                <option value="">–</option>
+                {% for i in range(1,6) %}
+                  <option value="{{i}}">{{i}}</option>
+                {% endfor %}
+              </select>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Save Feedback</button>
+  </form>
+
+  <div class="mt-4">
+    <a href="{{ url_for('preferences') }}" class="btn btn-outline-primary">Change Filters</a>
+    <a href="{{ url_for('logout') }}" class="btn btn-outline-danger ml-2">Logout</a>
+  </div>
+</div>
+{% endblock %}

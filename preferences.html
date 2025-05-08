@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container">
+  <h2 class="mb-4">Find Restaurants Near You </h2>
+  <form method="post" id="prefForm">
+    <div class="form-group">
+      <label for="city-select">Select City : </label>
+      <select name="city" id="city-select" class="form-control" required>
+        <option value=""> Choose a City </option>
+        {% for c in cities %}
+          <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div id="loc-container" class="form-group" style="display:none;">
+      <label for="locality-select">Select Locality : </label>
+      <select name="locality" id="locality-select" class="form-control" required>
+        <option value=""> Choose a Locality </option>
+      </select>
+    </div>
+
+    <div id="dynamic" style="display:none;">
+      <div class="form-group">
+        <label>Cuisines : </label>
+        <div class="border rounded p-2" id="cuisines" style="max-height: 200px; overflow-y: auto;"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Amenities : </label>
+        <div class="border rounded p-2" id="amenities" style="max-height: 200px; overflow-y: auto;"></div>
+      </div>
+
+      <div class="form-group">
+        <label>Budget per Person : ₹<span id="budget-val"></span></label>
+        <input type="range" name="budget" id="budget" class="form-control-range">
+      </div>
+
+      <button type="submit" class="btn btn-success"> Get Top 5 Recommendations (Can be less) </button>
+    </div>
+  </form>
+</div>
+
+<script>
+  const citySelect  = document.getElementById('city-select'),
+        locCont     = document.getElementById('loc-container'),
+        localitySel = document.getElementById('locality-select'),
+        dynamic     = document.getElementById('dynamic'),
+        cbxDiv      = document.getElementById('cuisines'),
+        abxDiv      = document.getElementById('amenities'),
+        budg        = document.getElementById('budget'),
+        budgVal     = document.getElementById('budget-val');
+
+  citySelect.onchange = () => {
+    const city = citySelect.value;
+    dynamic.style.display = 'none';
+    if (!city) return locCont.style.display = 'none';
+
+    fetch(`/api/localities?city=${encodeURIComponent(city)}`)
+      .then(r => r.json())
+      .then(locs => {
+        localitySel.innerHTML = '<option value="">-- Pick a Locality --</option>';
+        locs.forEach(l => {
+          const opt = document.createElement('option');
+          opt.value = l;
+          opt.textContent = l;
+          localitySel.appendChild(opt);
+        });
+        locCont.style.display = 'block';
+      });
+  };
+
+  localitySel.onchange = () => {
+    const city = citySelect.value,
+          loc  = localitySel.value;
+    if (!loc) return dynamic.style.display = 'none';
+
+    fetch(`/api/options?city=${encodeURIComponent(city)}&locality=${encodeURIComponent(loc)}`)
+      .then(r => r.json())
+      .then(d => {
+        cbxDiv.innerHTML = '';
+        d.cuisines.forEach(c => {
+          cbxDiv.innerHTML += `<label class="mr-3"><input type="checkbox" name="cuisines" value="${c}"> ${c}</label>`;
+        });
+        abxDiv.innerHTML = '';
+        d.amenities.forEach(a => {
+          abxDiv.innerHTML += `<label class="mr-3"><input type="checkbox" name="amenities" value="${a}"> ${a}</label>`;
+        });
+        budg.min = d.min_budget;
+        budg.max = d.max_budget;
+        budg.value = d.min_budget;
+        budgVal.textContent = d.min_budget;
+
+        dynamic.style.display = 'block';
+      });
+  };
+
+  budg.oninput = () => budgVal.textContent = budg.value;
+</script>
+{% endblock %}

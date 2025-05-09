@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container">
+  <h2 class="mb-4">Find Recipes</h2>
+
+  <form method="POST" action="{{ url_for('recipes_home') }}">
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="cuisine">Cuisine : </label>
+        <select name="cuisine" class="form-control">
+          <option value="">Any</option>
+          {% for c in cuisine_options %}
+            <option>{{ c }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="category">Category : </label>
+        <select name="category" class="form-control">
+          <option value="">Any</option>
+          {% for c in category_options %}
+            <option>{{ c }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="min_rating">Min Rating : </label>
+        <input type="number" name="min_rating" step="0.1" min="0" max="5" class="form-control">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label>Dietary : </label>
+        <div class="form-check">
+          {% for d in dietary_options %}
+            <label class="form-check-label mr-3">
+              <input type="checkbox" class="form-check-input" name="dietary" value="{{ d }}"> {{ d }}
+            </label>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label>Equipment : </label>
+        <div class="form-check">
+          {% for e in equipment_options %}
+            <label class="form-check-label mr-3">
+              <input type="checkbox" class="form-check-input" name="equipment" value="{{ e }}"> {{ e }}
+            </label>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Special : </label>
+      <div class="form-check">
+        {% for s in special_options %}
+          <label class="form-check-label mr-3">
+            <input type="checkbox" class="form-check-input" name="special" value="{{ s }}"> {{ s }}
+          </label>
+        {% endfor %}
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary"> Get Top 5 Recipes (May be less) </button>
+  </form>
+
+  {% if recommendations %}
+    <hr class="my-4">
+    <h3 class="mb-3">Your Top Picks </h3>
+
+    <div class="row">
+    {% for r in recommendations %}
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title">{{ r.name }}</h4>
+            <p class="card-text">
+              <strong>Cuisine:</strong> {{ r.cuisine or "N/A" }}<br>
+              <strong>Category:</strong> {{ r.category }}<br>
+              <strong>Rating:</strong> {{ r.rating }} ({{ r.review_count }} reviews)<br>
+              <strong>Dietary:</strong> {{ r.dietary_tags|join(', ') or "N/A" }}<br>
+              <strong>Equipment:</strong> {{ r.equipment_tags|join(', ') or "N/A" }}<br>
+              <strong>Special:</strong> {{ r.special_tags|join(', ') or "N/A" }}
+            </p>
+
+            <form method="POST" action="{{ url_for('add_to_grocery', recipe_id=r.id) }}" class="d-inline">
+              <button class="btn btn-sm btn-success mb-2"> Add Ingredients </button>
+            </form>
+            <button class="btn btn-sm btn-outline-info mb-2" type="button" data-toggle="collapse"
+              data-target="#details{{ loop.index }}"> View Details </button>
+
+            <div class="collapse" id="details{{ loop.index }}">
+              <hr>
+              <strong>Ingredients : </strong>
+              <ul>
+                {% for ing in r.ingredients %}
+                  <li>{{ ing }}</li>
+                {% endfor %}
+              </ul>
+
+              <strong>Steps : </strong>
+              <ol>
+                {% for step in r.steps %}
+                  <li>{{ step }}</li>
+                {% endfor %}
+              </ol>
+
+              <p>
+                <strong>Prep Time : </strong> {{ r.prep_time }} min |
+                <strong>Total Time : </strong> {{ r.total_time }} min
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

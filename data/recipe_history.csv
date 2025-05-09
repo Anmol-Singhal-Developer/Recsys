@@ -1,0 +1,95 @@
+user_id,recipe_id,name,cuisine,category,rating,timestampAnmol,80184,fridge batter bran muffins,[],Quick Breads,5.0,2025-05-05T08:31:48.928398
+Anmol,413309,oatmeal and apple breakfast muffins,[],Quick Breads,5.0,2025-05-05T08:31:48.928398
+Anmol,529607,sparkling christmas punch,[],Punch Beverage,5.0,2025-05-05T08:31:48.928398
+Anmol,71096,sweet and spicy chicken pasta,[],One Dish Meal,5.0,2025-05-05T08:31:48.928398
+Anmol,249275,chilled spiced yellow-squash soup,[],Vegetable,3.0,2025-05-05T08:31:48.928398
+Anmol,1008,pizza loaf,[],< 15 Mins,5.0,2025-05-05T08:31:56.672825
+Anmol,1379,herbal vinegar with garlic & basil,[],< 15 Mins,5.0,2025-05-05T08:31:56.672825
+Anmol,1416,butter shortbreads,[],< 15 Mins,5.0,2025-05-05T08:31:56.672825
+Anmol,1841,mushroom alfredo,[],< 15 Mins,5.0,2025-05-05T08:31:56.672825
+Anmol,1944,shrimp newburg,[],< 15 Mins,5.0,2025-05-05T08:31:56.672825
+Anmol,1008,pizza loaf,[],< 15 Mins,5.0,2025-05-05T08:34:41.371790
+Anmol,1379,herbal vinegar with garlic & basil,[],< 15 Mins,5.0,2025-05-05T08:34:41.371790
+Anmol,1416,butter shortbreads,[],< 15 Mins,5.0,2025-05-05T08:34:41.371790
+Anmol,1841,mushroom alfredo,[],< 15 Mins,5.0,2025-05-05T08:34:41.371790
+Anmol,1944,shrimp newburg,[],< 15 Mins,5.0,2025-05-05T08:34:41.371790
+Anmol,286455,easy sauteed pork with white rice,[],Pork,5.0,2025-05-05T08:43:41.603675
+Anmol,491098,pumpkin white chip nut bars,[],Bar Cookie,5.0,2025-05-05T08:43:41.603675
+Anmol,533908,frozen mint chocolate pie,[],Pie,5.0,2025-05-05T08:43:41.603675
+Anmol,303828,fresh tomato sauce with garden herbs,[],One Dish Meal,5.0,2025-05-05T08:43:41.603675
+Anmol,434506,peanut butter chocolate mud pie,[],Pie,5.0,2025-05-05T08:43:41.603675
+Anmol,11977,puffed up chiles rellenos,"['canadian', 'mexican']",Lunch/Snacks,5.0,2025-05-05T08:43:50.236043
+Anmol,12462,mexican egg cups,"['canadian', 'mexican']",Breakfast,5.0,2025-05-05T08:43:50.236043
+Anmol,12732,rice verde for one or two,"['canadian', 'mexican']",Lunch/Snacks,5.0,2025-05-05T08:43:50.236043
+Anmol,26483,nachos supper,"['canadian', 'mexican']",One Dish Meal,5.0,2025-05-05T08:43:50.236043
+Anmol,30665,threesies m & m fried rice for 3 (mandarin/mexican),"['canadian', 'mexican']",One Dish Meal,5.0,2025-05-05T08:43:50.236043
+Anmol,355337,pralines &amp; cream pecan-caramel muffins,[],Quick Breads,5.0,2025-05-05T09:03:28.580502
+Anmol,52581,spanish egg casserole,[],One Dish Meal,5.0,2025-05-05T09:03:28.580502
+Anmol,25513,tender sauteed zucchini,[],Vegetable,5.0,2025-05-05T09:03:28.580502
+Anmol,276934,make-ahead meatballs,[],Meat,5.0,2025-05-05T09:03:28.580502
+Anmol,7155,clam chowder,[],Chowders,5.0,2025-05-05T09:03:28.580502
+Madhu,425226,indian stuffed green peppers,"['asian', 'indian']",Potato,5.0,2025-05-05T18:07:27.388889
+Madhu,400545,pecan pie brownies -- version ii,[],Dessert,5.0,2025-05-05T18:07:27.388889
+Madhu,196001,brined roasted turkey,[],Whole Turkey,5.0,2025-05-05T18:07:27.388889
+Madhu,73377,granny's caramel cinnamon rolls,[],Yeast Breads,4.5,2025-05-05T18:07:27.388889
+Madhu,134502,pasta with canned sardine sauce,[],Low Cholesterol,3.0,2025-05-05T18:07:27.388889
+Ashok,115387,the black swan house dressing,[],Salad Dressings,5.0,2025-05-05T18:41:11.786814
+Ashok,64993,vegetable cheese bisque,[],Cheese,5.0,2025-05-05T18:41:11.786814
+Ashok,473072,canterbury jumbles,[],Drop Cookies,5.0,2025-05-05T18:41:11.786814
+Ashok,345496,sartacenidde - orecchiette with broccoli and chili,[],Lunch/Snacks,5.0,2025-05-05T18:41:11.786814
+Ashok,21058,jalapeno glazed steak with bell pepper salsa,['canadian'],Meat,4.0,2025-05-05T18:41:11.786814
+Ashok,132347,shrimp and crab pasta salad,[],Crab,5.0,2025-05-05T18:41:37.215904
+Ashok,309300,bisquick glorious morning waffles,[],Breakfast,5.0,2025-05-05T18:41:37.215904
+Ashok,280486,honey coconut bites,[],Dessert,5.0,2025-05-05T18:41:37.215904
+Ashok,18500,boneless buffalo bites,[],Lunch/Snacks,4.5,2025-05-05T18:41:37.215904
+Ashok,181267,quinoa pilaf with dried fruit and pecans,[],Grains,4.0,2025-05-05T18:41:37.215904
+Ashok,133,blueberry pancake syrup,[],Sauces,5.0,2025-05-05T18:41:38.397978
+Ashok,182,low-fat apple &amp; apricot,[],Dessert,5.0,2025-05-05T18:41:38.397978
+Ashok,290,bean curd with broccoli,"['chinese', 'asian']",Soy/Tofu,5.0,2025-05-05T18:41:38.397978
+Ashok,490,couscous with currants and cumin,['asian'],Southwest Asia (middle East),5.0,2025-05-05T18:41:38.397978
+Ashok,519,spicy hash browns - homemade,[],Breakfast,5.0,2025-05-05T18:41:38.397978
+Ashok,437740,vegetable pakoras with mint and cilantro chutney,['indian'],Vegetable,5.0,2025-05-05T18:41:49.924714
+Ashok,439185,spinach pakoras,['indian'],Vegetable,5.0,2025-05-05T18:41:49.924714
+Ashok,440753,ww curried butternut squash soup,['indian'],Vegetable,5.0,2025-05-05T18:41:49.924714
+Ashok,440915,tomato and coriander soup,['indian'],Vegetable,5.0,2025-05-05T18:41:49.924714
+Ashok,441971,bottle gourd in milk gravy,['indian'],Vegetable,5.0,2025-05-05T18:41:49.924714
+Ashok,18411,spiral challah,[],Yeast Breads,5.0,2025-05-05T18:42:00.353237
+Ashok,53857,oreo mini cheesecakes by mee,[],Cheesecake,5.0,2025-05-05T18:42:00.353237
+Ashok,53861,"strawberry & sour cream crepes (very thin, ""eggy""",[],Breakfast,5.0,2025-05-05T18:42:00.353237
+Ashok,53922,almond joy cheesecake,[],Cheesecake,5.0,2025-05-05T18:42:00.353237
+Ashok,54343,french silk chocolate pie (or parfait),[],Pie,5.0,2025-05-05T18:42:00.353237
+Ashok,133,blueberry pancake syrup,[],Sauces,5.0,2025-05-05T18:42:01.109066
+Ashok,182,low-fat apple &amp; apricot,[],Dessert,5.0,2025-05-05T18:42:01.109066
+Ashok,290,bean curd with broccoli,"['chinese', 'asian']",Soy/Tofu,5.0,2025-05-05T18:42:01.109066
+Ashok,490,couscous with currants and cumin,['asian'],Southwest Asia (middle East),5.0,2025-05-05T18:42:01.109066
+Ashok,519,spicy hash browns - homemade,[],Breakfast,5.0,2025-05-05T18:42:01.109066
+Ashok,7449,buttered fried parsnips,[],Vegetable,5.0,2025-05-05T18:42:10.539669
+Ashok,509569,good mexican nachos at home,['mexican'],Lunch/Snacks,5.0,2025-05-05T18:42:10.539669
+Ashok,446225,granola bars with brown rice protein,[],< 60 Mins,5.0,2025-05-05T18:42:10.539669
+Ashok,226163,lazy beef vindaloo,"['asian', 'indian']",Meat,5.0,2025-05-05T18:42:10.539669
+Ashok,117618,grilled clams oreganate,[],Summer,3.0,2025-05-05T18:42:10.539669
+Ashok,274648,"white beans with lemon, garlic and rosemary",[],Beans,5.0,2025-05-05T19:26:30.678873
+Ashok,106370,mini pizza bites,[],Cheese,5.0,2025-05-05T19:26:30.678873
+Ashok,475752,italian meatballs and sauce,[],Meatballs,5.0,2025-05-05T19:26:30.678873
+Ashok,227317,cheesy hot french bread,[],High In...,5.0,2025-05-05T19:26:30.678873
+Ashok,265239,sliced chili hot dogs over corn chips for 2,[],Pork,4.0,2025-05-05T19:26:30.678873
+Ashok,10604,spicy peanut sauce,"['chinese', 'asian', 'indian']",Spreads,5.0,2025-05-05T19:26:38.018440
+Ashok,198796,in the black chili paste,"['chinese', 'asian', 'indian']",Peppers,5.0,2025-05-05T19:26:38.018440
+Ashok,438285,metric jester's fusion stirfry,"['chinese', 'asian', 'indian']",Spaghetti,5.0,2025-05-05T19:26:38.018440
+Ashok,439466,chili fish pakistani style,"['chinese', 'asian', 'indian']",Szechuan,5.0,2025-05-05T19:26:38.018440
+Ashok,496408,stir fried beans and carrots,"['chinese', 'asian', 'indian']",Vegetable,5.0,2025-05-05T19:26:38.018440
+Anmol123,437740,vegetable pakoras with mint and cilantro chutney,['indian'],Vegetable,5.0,2025-05-05T20:50:48.028842
+Anmol123,439185,spinach pakoras,['indian'],Vegetable,5.0,2025-05-05T20:50:48.028842
+Anmol123,440753,ww curried butternut squash soup,['indian'],Vegetable,5.0,2025-05-05T20:50:48.028842
+Anmol123,440915,tomato and coriander soup,['indian'],Vegetable,5.0,2025-05-05T20:50:48.028842
+Anmol123,441971,bottle gourd in milk gravy,['indian'],Vegetable,5.0,2025-05-05T20:50:48.028842
+Anmol,468106,"black bean, vegetable, and roasted poblano soup",[],Black Beans,5.0,2025-05-06T03:05:32.768484
+Anmol,415543,pumpkin pecan scones,[],Scones,5.0,2025-05-06T03:05:32.768484
+Anmol,358206,sausage egg &amp; cheese breakfast casserole,[],Breakfast,5.0,2025-05-06T03:05:32.768484
+Anmol,183786,pineapple bbq flank steak for slow cooker,[],One Dish Meal,4.0,2025-05-06T03:05:32.768484
+Anmol,212594,sarah's amazing vegetarian lasagna,[],Stew,3.0,2025-05-06T03:05:32.768484
+Anmol,437740,vegetable pakoras with mint and cilantro chutney,['indian'],Vegetable,5.0,2025-05-06T03:05:45.622538
+Anmol,439185,spinach pakoras,['indian'],Vegetable,5.0,2025-05-06T03:05:45.622538
+Anmol,440753,ww curried butternut squash soup,['indian'],Vegetable,5.0,2025-05-06T03:05:45.622538
+Anmol,440915,tomato and coriander soup,['indian'],Vegetable,5.0,2025-05-06T03:05:45.622538
+Anmol,441971,bottle gourd in milk gravy,['indian'],Vegetable,5.0,2025-05-06T03:05:45.622538
